@@ -9,8 +9,9 @@ script, first, second = argv
 working_dir = first
 data_file   = second
 
-dir = os.path.dirname(os.path.realpath(__file__))
-data_file_full = os.path.join(dir,data_file)
+#dir = os.path.dirname(os.path.realpath(__file__))
+#data_file_full = os.path.join(dir,data_file)
+data_file_full  = data_file
 
 master_file = "run_ENA_download_Py.sh"
 
