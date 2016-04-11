@@ -1,7 +1,7 @@
 # PythonTools
 Scripts for NGS processing
 
-#Download_FTP_ENA.py:
+#Download_FTP_ENA.py
 
 
 Download fastq files from ENA.
