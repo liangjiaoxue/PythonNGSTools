@@ -2,6 +2,7 @@
 Scripts for NGS processing
 
 Download_FTP_ENA.py
+
 Usage:
 1. Search the project in ENA to get the information page of one study. 
 2. Click "Read Files" tag next to "Navigation"
