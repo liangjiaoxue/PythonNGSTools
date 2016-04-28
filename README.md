@@ -1,4 +1,4 @@
-# PythonTools
+# PythonNGSTools
 Scripts for NGS processing
 
 #Download_FTP_ENA.py
