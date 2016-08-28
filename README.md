@@ -1,6 +1,16 @@
 # PythonNGSTools
 Scripts for NGS processing
 
+#MUMmerSNPs2VCF.py  
+This code convert output file from show-snps into VCF format.
+"-x 1" option should be turned on so that reference fasta is not needed.  
+
+Usage:  
+
+show-snps -Clr -x 1  -T mum.delta.filter  >mum.delta.filterX.snps  
+python3.4 MUMmerSNPs2VCF.py mum.delta.filterX.snps  Tan_filterX.snps.vcf  
+
+
 #Download_FTP_ENA.py
 
 
