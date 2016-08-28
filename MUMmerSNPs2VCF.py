@@ -5,6 +5,8 @@ This code take output from show-snps.
 The options should be set as:
 show-snps -Clr -x 1  -T mum.delta.filter  >mum.delta.filterX.snps
 
+
+Keywords: MUMmer show-snps VCF MUMmer2VCF
 """
 
 
