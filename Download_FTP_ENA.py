@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""
+Download fastq files from ENA.
+"""
+
 from sys import argv
 import re
 import os
