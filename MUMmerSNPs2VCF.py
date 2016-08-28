@@ -22,6 +22,8 @@ vcf_out = []
 def check_buff(indel_buff_in):
     allele_ref = indel_buff_in[0][1]
     allele_alt = indel_buff_in[0][2]
+    ref_id  = indel_buff_in[0][12]
+    pos  = str(int(indel_buff_in[0][0])-1)
     if allele_ref == '.':
         # insertion 
         ref_start = indel_buff_in[0][8][0]
@@ -75,12 +77,20 @@ with open (input_file,"r") as INPUT:
                     in_del_start = 1
                     indel_buff.append(line_list)
                 else :
-                    if ref_id == last_ref and int(pos) == last_pos+1:
-                        indel_buff.append(line_list)
-                    else: # new indel 
-                        check_buff(indel_buff)
-                        indel_buff = []
-                        indel_buff.append(line_list)
+                    if allele_ref == '.' :
+                        if ref_id == last_ref and int(pos) == last_pos :
+                            indel_buff.append(line_list)
+                        else : # new insertion
+                            check_buff(indel_buff)
+                            indel_buff = []
+                            indel_buff.append(line_list)
+                    elif allele_alt == '.':
+                        if ref_id == last_ref and int(pos) == last_pos + 1:
+                            indel_buff.append(line_list)
+                        else:  # new deletion
+                            check_buff(indel_buff)
+                            indel_buff = []
+                            indel_buff.append(line_list)
             else :
                 # SNP
                 if in_del_start == 1:
