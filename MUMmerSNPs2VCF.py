@@ -97,7 +97,8 @@ with open (input_file,"r") as INPUT:
 
 
 #  Write VCF
-new_list = sorted(vcf_out, key=lambda x: int(x[1]))
+new_list1 = sorted(vcf_out, key=lambda x: int(x[1]))
+new_list = sorted(new_list1, key=lambda x: x[0])
 for line_new in new_list:
     OUT.write("\t".join(line_new)+"\n")
 OUT.close()
