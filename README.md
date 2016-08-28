@@ -2,7 +2,7 @@
 Scripts for NGS processing
 
 #MUMmerSNPs2VCF.py  
-This code convert output file from show-snps into VCF format.
+This code convert output file from show-snps of MUMmer into VCF format.
 "-x 1" option should be turned on so that reference fasta is not needed.  
 
 Usage:  
