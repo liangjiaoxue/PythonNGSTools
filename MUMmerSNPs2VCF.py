@@ -24,10 +24,11 @@ vcf_out = []
 def check_buff(indel_buff_in):
     allele_ref = indel_buff_in[0][1]
     allele_alt = indel_buff_in[0][2]
-    ref_id  = indel_buff_in[0][12]
-    pos  = str(int(indel_buff_in[0][0])-1)
+    ref_id  = indel_buff_in[0][12]    
     if allele_ref == '.':
         # insertion 
+        pos  = indel_buff_in[0][0]
+        # In MUMmer format, the coordinate of '.' is the coordinate of the last nt so, this position is kept.
         ref_start = indel_buff_in[0][8][0]
         direction = indel_buff_in[0][11]
         alt_out = ''
@@ -42,6 +43,9 @@ def check_buff(indel_buff_in):
         vcf_out.append(out_line)
     elif allele_alt == '.':
         # deletion
+        pos  = str(int(indel_buff_in[0][0])-1)
+        # the coordinate here in the reference is correct, but we need the coordinate of last nt.
+        # In VCF format, we need check the last nt.
         alt_start = indel_buff_in[0][8][0] # first nt in context
         ref_out = alt_start
         for line_l in indel_buff_in :
