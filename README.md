@@ -10,6 +10,17 @@ Usage:
 show-snps -Clr -x 1  -T mum.delta.filter  >mum.delta.filterX.snps  
 python3.4 MUMmerSNPs2VCF.py mum.delta.filterX.snps  mum_filterX.snps.vcf  
 
+Notes for the code:
+To get the correct converted VCF files from MUMmer/snps:
+1) You need to check the reference sequence to rebuild insertion and deletion. 
+Instead of reading original reference fasta file, I used "show-snps -x 1", so that the surrounding nucleotides are also reported. 
+2) For the insertions, if the query sequences are reversely mapped to the references, the orders of nucleotides in query sequence are reversely reported. 
+So, they needed to be concatenated in reverse order. 
+3) The coordinates of insertion and deletions. 
+For insertions, the coordinates in MUMmer/snps are the coordinates of nucleotides before insertions. They need to be kept as the same in VCF files. 
+For deletions, the coordinates in MUMmer/snps are of the nucleotides that are deleted. The coordinates in VCF should be : first_position_of_deletion_block - 1.
+
+
 
 #Download_FTP_ENA.py
 
