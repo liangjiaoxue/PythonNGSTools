@@ -4,6 +4,8 @@
 This code take output from show-snps.
 The options should be set as:
 show-snps -Clr -x 1  -T mum.delta.filter  >mum.delta.filterX.snps
+Usage:
+python3.4 MUMmerSNPs2VCF.py mum.delta.filterX.snps mum_filterX.snps.vcf
 
 
 Keywords: MUMmer show-snps VCF MUMmer2VCF
