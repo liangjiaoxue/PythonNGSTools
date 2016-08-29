@@ -8,7 +8,7 @@ This code convert output file from show-snps of MUMmer into VCF format.
 Usage:  
 
 show-snps -Clr -x 1  -T mum.delta.filter  >mum.delta.filterX.snps  
-python3.4 MUMmerSNPs2VCF.py mum.delta.filterX.snps  Tan_filterX.snps.vcf  
+python3.4 MUMmerSNPs2VCF.py mum.delta.filterX.snps  mum_filterX.snps.vcf  
 
 
 #Download_FTP_ENA.py
