@@ -2,19 +2,25 @@
 Scripts for NGS data processing
 
 #HapCUT2VCF.py   
-This code converts output file from HapCUT2(https://github.com/pjedge/hapcut2) into VCF format.  
+This code convert a output file from HapCUT2(https://github.com/pjedge/hapcut2) into VCF format.
 
 Usage:  
 ```python
 python HapCUT2VCF.py  hapcut2_table  output_VCF   original_VCF(optional)  
 ```
-If the original input VCF file for HapCUT2 is provided, it will be combined into the same output.   
-Each block in HapCUT2 table is stored as haplotype block in VCF file, and marked with PS tag.   
-(The numbering starts from 1 for each run. If the data was processed per chromosome, PS IDs are duplicated in each chromosome.)
+If the original input VCF file for HapCUT2 is provided, it will be combined into the same output file.
+Each block in HapCUT2 table is stored as haplotype block in VCF file, and marked using PS tag.
+The numbering of PS starts from 1 for each run. The output tables can be concatenated before converting
+to generate unique PS IDs in the whole genome.
 
 
+#VCFsplit4HapCUT2.py  
+This code split a VCF file into files of smaller size.  It can be used to run HapCUT2 in parallel.
 
-
+Usage:
+```python
+python VCFsplit4HapCUT2.py  vcf_input  line_number_per_file
+```
 
 
 #MUMmerSNPs2VCF.py  
