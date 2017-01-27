@@ -8,9 +8,9 @@ Usage:
 ```python
 python HapCUT2VCF.py  hapcut2_table  output_VCF   original_VCF(optional)  
 ```
-If the original input VCF file for HapCUT2 is provided, if will be combined into the same output.   
+If the original input VCF file for HapCUT2 is provided, it will be combined into the same output.   
 Each block in HapCUT2 table is stored as haplotype block in VCF file, and marked with PS tag.   
-(The numbering starts from 1 for each run. If the data was processed per Chromosome, PS IDs are duplicated in each chromosome.)
+(The numbering starts from 1 for each run. If the data was processed per chromosome, PS IDs are duplicated in each chromosome.)
 
 
 
