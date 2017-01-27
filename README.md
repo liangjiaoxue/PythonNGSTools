@@ -2,7 +2,7 @@
 Scripts for NGS data processing
 
 #HapCUT2VCF.py   
-This code convert output file from HapCUT2(https://github.com/pjedge/hapcut2) into VCF format.  
+This code converts output file from HapCUT2(https://github.com/pjedge/hapcut2) into VCF format.  
 
 Usage:  
 python HapCUT2VCF.py  hapcut2_table  output_VCF   original_VCF(optional)  
@@ -16,7 +16,7 @@ Each block in HapCUT2 table is stored as haplotype block in VCF file, and marked
 
 
 #MUMmerSNPs2VCF.py  
-This code convert output file from show-snps of MUMmer into VCF format.
+This code converts output file from show-snps of MUMmer into VCF format.
 "-x 1" option should be turned on so that reference fasta is not needed.  
 
 Usage:  
