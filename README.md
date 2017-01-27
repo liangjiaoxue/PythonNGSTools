@@ -4,7 +4,7 @@ Scripts for NGS data processing
 #HapCUT2VCF.py   
 This code convert a output file from HapCUT2(https://github.com/pjedge/hapcut2) into VCF format.
 
-Usage:  
+Usage(python3):  
 ```python
 python HapCUT2VCF.py  hapcut2_table  output_VCF   original_VCF(optional)  
 ```
@@ -17,7 +17,7 @@ to generate unique PS IDs in the whole genome.
 #VCFsplit4HapCUT2.py  
 This code split a VCF file into files of smaller size.  It can be used to run HapCUT2 in parallel.
 
-Usage:
+Usage(python3):
 ```python
 python VCFsplit4HapCUT2.py  vcf_input  line_number_per_file
 ```
