@@ -22,13 +22,10 @@ master_file = "run_ENA_download_Py.sh"
 file_out = open(master_file, 'w')
 file_out.write("#!/bin/sh\n")
 file_out.write("cd "+working_dir + "\n")
-	
-	
-	
+		
 num = 0
 run_position = 0
 ftp_position = 0	
-
 with open(data_file_full, 'r') as file_in:	
 	for line in file_in.readlines():
 	    buffer = re.split(r'\t', line.strip())	    
