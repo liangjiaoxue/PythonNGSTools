@@ -31,10 +31,8 @@ ftp_position = 0
 
 with open(data_file_full, 'r') as file_in:	
 	for line in file_in.readlines():
-	    buffer = re.split(r'\t', line.strip())
-	    
-	    num += 1
-	    
+	    buffer = re.split(r'\t', line.strip())	    
+	    num += 1	    
 	    if num == 1 :
 	    	for x in range(0,len(buffer)):
 	    		if buffer[x] == 'run_accession' :
