@@ -1,7 +1,7 @@
 # PythonNGSTools
 Scripts for NGS data processing
 
-#HapCUT2VCF.py   
+## HapCUT2VCF.py   
 This code convert a output file from HapCUT2(https://github.com/pjedge/hapcut2) into VCF format.
 
 Usage(python3):  
@@ -14,7 +14,7 @@ The numbering of PS starts from 1 for each run. The output tables can be concate
 to generate unique PS IDs in the whole genome.
 
 
-#VCFsplit4HapCUT2.py  
+## VCFsplit4HapCUT2.py  
 This code split a VCF file into files of smaller size.  It can be used to run HapCUT2 in parallel.
 
 Usage(python3):
@@ -23,7 +23,7 @@ python VCFsplit4HapCUT2.py  vcf_input  line_number_per_file
 ```
 
 
-#MUMmerSNPs2VCF.py  
+## MUMmerSNPs2VCF.py  
 This code converts output file from show-snps of MUMmer into VCF format.
 "-x 1" option should be turned on so that reference fasta is not needed.  
 
@@ -45,7 +45,7 @@ For deletions, the coordinates in MUMmer/snps are of the nucleotides that are de
 
 
 
-#Download_FTP_ENA.py
+## Download_FTP_ENA.py
 
 
 Download fastq files from ENA.
