@@ -6,7 +6,8 @@ This code convert a output file from HapCUT2(https://github.com/pjedge/hapcut2) 
 Usage:
 HapCUT2VCF.py   hapcut2_table  output_VCF   original_VCF(optional)
 
-If the original input VCF file for HapCUT2 is provided, it will be combined into the same output file.
+Because hapcut2_table only keep phased variants. Unphased variants can be recovered if the original 
+input VCF file for HapCUT2 is provided. The variants will be combined into the same output file.
 Each block in HapCUT2 table is stored as haplotype block in VCF file, and marked using PS tag.
 The numbering of PS starts from 1 for each run. The output tables can be concatenated before converting
 to generate unique PS IDs in the whole genome.
