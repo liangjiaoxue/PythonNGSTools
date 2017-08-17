@@ -61,7 +61,7 @@ python2.7 Download_FTP_ENA.py  ./  ENA_description.txt
 
 ./ : is the current directory and can be changed into the directory to store the fastq files.  
 
-#MUMmer helper
+## MUMmer helper
 Some tools to split large query file, submit jobs to clusters and merge the delta output from MUMmer
 
 
