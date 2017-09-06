@@ -89,7 +89,7 @@ class  VarTable:
                         continue
                     # filter deleted records
                     record = line.rstrip().split("\t")
-                    record[7] = '.'
+                    # record[7] = '.'
                     # if phased replace the genotype
                     if tracking in self.hap_vcf.keys():
                         hap_out = self.hap_vcf[tracking]
